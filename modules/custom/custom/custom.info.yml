@@ -1,0 +1,5 @@
+name: Custom
+type: module
+description : Custom module for learning drupal 8
+core: 8.x
+

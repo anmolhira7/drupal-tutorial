@@ -1,0 +1,39 @@
+<?php
+  function employee_schema(){
+    // SCHEMA IS TABLE NAME
+    $schema['employee'] = [
+        'fields'=> [
+            'id'=> [
+                'description'=>'employee id',
+                'type'=>'serial', //FOR AUTO INCREMENT
+                'not null'=>TRUE
+            ],
+            'name'=>[
+                'type'=>'varchar',
+                'length'=>50,
+                'not null'=>TRUE
+            ],
+            'gender'=>[
+                'type'=>'varchar',
+                'length'=>550,
+                'not null'=>TRUE,
+            ],
+            'about_employee'=>[
+                'type'=>'text',
+                'not null'=>TRUE,
+            ],
+            'create_data'=>[
+                'mysql_type'=>'timestamp',
+                'not null'=>TRUE
+            ]
+            ],
+        //setting primary key and index on cols
+        'primary key'=>['id'],
+        'indexes'=>[    
+            'id'=>['id'],  
+            'name'=>['name']
+        ]
+    ];
+        
+    return $schema;
+  }

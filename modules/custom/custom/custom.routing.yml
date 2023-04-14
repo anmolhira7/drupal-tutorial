@@ -1,0 +1,26 @@
+custom.content:
+  path: '/hello'
+  defaults:
+    _controller: '\Drupal\custom\Controller\HelloController::content' 
+    _title: 'Hello page'
+  requirements:  
+    _permission: 'access content'
+
+
+custom.information:
+  path: '/information'
+  defaults:
+    _controller: '\Drupal\custom\Controller\HelloController::information'
+    _title: ''
+  requirements:
+    _permission: 'information permission' 
+    #_role: student+administrator 
+
+custom.customForm:
+  path: '/customForm'    
+  defaults:
+    _form: '\Drupal\custom\Form\CustomForm'
+    _title: 'Form'
+  requirements:
+    _permission: 'access content'  
+

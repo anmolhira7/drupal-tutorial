@@ -1,0 +1,10 @@
+name: Absolute URL
+type: module
+description: "Returns absolute url of the site, no language prefix garanted"
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9 || ^10
+# Information added by Drupal.org packaging script on 2022-04-04
+version: '2.0.x-dev'
+project: 'absolute_url'
+datestamp: 1649071937
